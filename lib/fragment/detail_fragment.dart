@@ -59,7 +59,7 @@ class DetailFragment extends StatelessWidget {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(songName, style: Styling().titleTextStyle(),),
-                                  Text(" by ${songData!.song_by}", textAlign: TextAlign.start, style: Styling().titleTextStyleSmall(),)
+                                  Text("by ${songData!.song_by}", textAlign: TextAlign.start, style: Styling().titleTextStyleSmall(),)
                                 ],
                               ),
                             )
