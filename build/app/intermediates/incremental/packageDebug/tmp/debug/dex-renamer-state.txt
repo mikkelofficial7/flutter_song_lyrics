@@ -1,4 +1,4 @@
-#Mon Dec 12 20:24:10 WIB 2022
-base.0=/Users/mikkelseptiano/Desktop/SampleFlutter/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Mon Feb 20 23:48:23 WIB 2023
+base.0=/Users/mikkelseptiano/Desktop/flutterSample/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
