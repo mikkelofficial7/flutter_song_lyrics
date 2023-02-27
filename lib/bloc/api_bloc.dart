@@ -12,13 +12,16 @@ class ApiBloc extends Bloc<ApiEvent, ApiState> {
       try {
         emit(SongLoading());
         final mList = await _apiRepository.fetchListSong();
-        emit(SongLoaded(mList));
 
         if (mList.status == false) {
           emit(const SongError(404, "Failed to fetch data. data is not found"));
-        
-      } on NetworkError {
-        emit(const SongError(503, "Failed to fetch data. is your device online?"));
+
+        } else {
+          emit(SongLoaded(mList));
+        }
+      } on Exception catch (e) {
+        emit(const SongError(
+            500, "Failed to fetch data. is your device online?"));
       }
     });
   }
