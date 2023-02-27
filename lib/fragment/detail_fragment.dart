@@ -37,7 +37,7 @@ class DetailFragment extends StatelessWidget {
                               color: ColorConstant.black
                           ),
                           child: Image(
-                            image: NetworkImage(songData!.image_url),
+                            image: NetworkImage(songData!.image_url.toString()),
                           ),
                         ),
                         Positioned(
@@ -83,7 +83,7 @@ class DetailFragment extends StatelessWidget {
                               )
                           ),
                           child: SingleChildScrollView(
-                              child: Text(songData!.lyrics, style: Styling().contentTextStyle(),)
+                              child: Text(songData!.lyrics.toString(), style: Styling().contentTextStyle(),)
                           ),
                         )
                     ),

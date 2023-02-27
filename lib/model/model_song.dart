@@ -16,13 +16,13 @@ class SongModel {
 }
 
 class ItemSongModel {
-  final String song_name;
-  final String years;
-  final String song_by;
-  final String image_url;
-  final String lyrics;
+  final String? song_name;
+  final String? years;
+  final String? song_by;
+  final String? image_url;
+  final String? lyrics;
 
-  ItemSongModel({required this.song_name, required this.years, required this.song_by, required this.image_url, required this.lyrics});
+  ItemSongModel({this.song_name, this.years, this.song_by, this.image_url, this.lyrics});
 
   factory ItemSongModel.fromJson(Map<String, dynamic> json) {
     return ItemSongModel(

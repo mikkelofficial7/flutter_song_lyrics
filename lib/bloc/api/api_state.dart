@@ -9,8 +9,6 @@ abstract class ApiState extends Equatable {
 }
 
 // like sealed class for state management
-class SongInitial extends ApiState {}
-
 class SongLoading extends ApiState {}
 
 class SongLoaded extends ApiState {
