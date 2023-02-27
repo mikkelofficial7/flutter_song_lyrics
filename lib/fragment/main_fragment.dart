@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:sample_flutter/api/repository/api_repository.dart';
 import 'package:sample_flutter/constants/colorconstant.dart';
-import 'package:sample_flutter/fragment/main_fragment_container.dart';
-import 'package:sample_flutter/model/model_song.dart';
 import '../appbar.dart';
+import 'mainFragmentComponent/component_main_fragment.dart';
 
 class MainFragment extends StatelessWidget {
+  const MainFragment({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: Appbar("List of Hits Song", ColorConstant.blue),
-      body: MainFragmentContainer()
+      body: const MainFragmentContainer()
     );
   }
 }

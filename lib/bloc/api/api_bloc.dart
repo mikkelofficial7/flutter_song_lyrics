@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:sample_flutter/api/repository/api_repository.dart';
 import 'package:sample_flutter/bloc/api/api_event.dart';
 import 'package:sample_flutter/bloc/api/api_state.dart';
